@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60198A7734B7C6D13964B815 /* Pods_Holler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9623A4841FF3238A2E3566 /* Pods_Holler.framework */; };
+		61FDD28EB8C4770B1B52F741 /* Pods_Holler_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B380DD848074F762573F2579 /* Pods_Holler_test.framework */; };
+		BC3BB03E1C8586F300123AB4 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3BB03D1C8586F300123AB4 /* Target.swift */; };
+		BC7A5ACF1C7311D700D33588 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A5ACD1C7311D700D33588 /* CoreFoundation.framework */; };
+		BC7A5AD01C7311D700D33588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A5ACE1C7311D700D33588 /* Foundation.framework */; };
+		BC7A5ADA1C7313D300D33588 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5AD71C7313D300D33588 /* Logger.m */; };
+		BC7A5AE01C731BE300D33588 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5ADC1C731BE300D33588 /* Countries.swift */; };
+		BC7A5AE11C731BE300D33588 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5ADD1C731BE300D33588 /* Country.swift */; };
+		BC7A5AE21C731BE300D33588 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5ADE1C731BE300D33588 /* Gender.swift */; };
+		BC7A5AE31C731BE300D33588 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5ADF1C731BE300D33588 /* Interest.swift */; };
+		BC7A5AE51C731C9200D33588 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5AE41C731C9200D33588 /* Constants.swift */; };
+		BC7A5B2F1C731EC800D33588 /* README in Resources */ = {isa = PBXBuildFile; fileRef = BC7A5B101C731EC800D33588 /* README */; };
+		BC7A5B301C731EC800D33588 /* SwiftyFontContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B111C731EC800D33588 /* SwiftyFontContents.swift */; };
+		BC7A5B781C7320E200D33588 /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B5B1C7320E200D33588 /* FontBlaster.swift */; };
+		BC7A5B791C7320E200D33588 /* README in Resources */ = {isa = PBXBuildFile; fileRef = BC7A5B5C1C7320E200D33588 /* README */; };
+		BC7A5B7A1C7320E200D33588 /* SwiftyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B5D1C7320E200D33588 /* SwiftyArray.swift */; };
+		BC7A5B7B1C7320E200D33588 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B5E1C7320E200D33588 /* SwiftyUserDefaults.swift */; };
+		BC7A5B881C73216600D33588 /* SwiftyDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B821C73216600D33588 /* SwiftyDevice.swift */; };
+		BC7A5B891C73216600D33588 /* SwiftyNSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B831C73216600D33588 /* SwiftyNSBundle.swift */; };
+		BC7A5B8A1C73216600D33588 /* SwiftyNSLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B841C73216600D33588 /* SwiftyNSLocale.swift */; };
+		BC7A5B8B1C73216600D33588 /* SwiftyResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B851C73216600D33588 /* SwiftyResponseObjectSerializable.swift */; };
+		BC7A5B8C1C73216600D33588 /* SwiftyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B861C73216600D33588 /* SwiftyString.swift */; };
+		BC7A5B8D1C73216600D33588 /* SwiftyUILable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B871C73216600D33588 /* SwiftyUILable.swift */; };
+		BC7A5B8F1C7323E800D33588 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B8E1C7323E800D33588 /* Subscriber.swift */; };
+		BC7A5B921C73242800D33588 /* RMLLocationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5B911C73242800D33588 /* RMLLocationRequestManager.swift */; };
+		BC7B52CF1C75A86A00D1AAE1 /* Industry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52CE1C75A86A00D1AAE1 /* Industry.swift */; };
+		BC7B52D31C75C0CE00D1AAE1 /* holler_industry_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52D21C75C0CE00D1AAE1 /* holler_industry_tests.swift */; };
+		BC7B52D51C75C0EA00D1AAE1 /* holler_interest_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52D41C75C0EA00D1AAE1 /* holler_interest_tests.swift */; };
+		BC7B52D71C75C15700D1AAE1 /* holler_location_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52D61C75C15700D1AAE1 /* holler_location_tests.swift */; };
+		BC7B52DB1C76EAC500D1AAE1 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52DA1C76EAC400D1AAE1 /* Designation.swift */; };
+		BC7B52DD1C76EC3100D1AAE1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B52DC1C76EC3100D1AAE1 /* Location.swift */; };
+		BC814CBB1C7412EB001662C9 /* Holler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC814CBA1C7412EB001662C9 /* Holler.swift */; };
+		BC937BA21C83D96000B919D4 /* Subscriber.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7A5B8E1C7323E800D33588 /* Subscriber.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC937BA41C83FD0800B919D4 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC937BA31C83FD0800B919D4 /* Error.swift */; };
+		BC937BA61C841E7600B919D4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC937BA51C841E7600B919D4 /* Profile.swift */; };
+		BC98C1E31C85453900D80B7C /* Countries.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7A5ADC1C731BE300D33588 /* Countries.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC98C1E41C85453D00D80B7C /* Gender.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7A5ADE1C731BE300D33588 /* Gender.swift */; };
+		BC98C1E51C85454100D80B7C /* Interest.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7A5ADF1C731BE300D33588 /* Interest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC98C1E61C85454400D80B7C /* Industry.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7B52CE1C75A86A00D1AAE1 /* Industry.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC98C1E71C85454800D80B7C /* Designation.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7B52DA1C76EAC400D1AAE1 /* Designation.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC98C1E81C85454A00D80B7C /* Location.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC7B52DC1C76EC3100D1AAE1 /* Location.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC98C1E91C85454D00D80B7C /* Profile.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC937BA51C841E7600B919D4 /* Profile.swift */; };
+		BCB31E151C7ABC8E0010E2D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB31E141C7ABC8E0010E2D0 /* Security.framework */; };
+		BCFF88071C74263100F97C3F /* HollerServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF88061C74263100F97C3F /* HollerServiceManager.swift */; };
+		BCFF88111C742E1700F97C3F /* Holler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A5AB31C73118200D33588 /* Holler.framework */; };
+		BCFF88171C742E2100F97C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A5ACE1C7311D700D33588 /* Foundation.framework */; };
+		BCFF881B1C7430C300F97C3F /* holler_pushNotification_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF881A1C7430C300F97C3F /* holler_pushNotification_tests.swift */; };
+		BCFF881F1C7457B400F97C3F /* holler_subscriber_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF881E1C7457B400F97C3F /* holler_subscriber_tests.swift */; };
+		BCFF88201C74595000F97C3F /* Holler.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC814CBA1C7412EB001662C9 /* Holler.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCFF88211C7459E200F97C3F /* HollerServiceManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = BCFF88061C74263100F97C3F /* HollerServiceManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCFF88121C742E1700F97C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7A5AAA1C73118200D33588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC7A5AB21C73118200D33588;
+			remoteInfo = holler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49C46FF1C182276B100877C5 /* Pods-holler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holler.release.xcconfig"; path = "Pods/Target Support Files/Pods-holler/Pods-holler.release.xcconfig"; sourceTree = "<group>"; };
+		6C9623A4841FF3238A2E3566 /* Pods_Holler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECAA05550DFEAD6A0A8F815 /* Pods-Holler_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Holler_test/Pods-Holler_test.debug.xcconfig"; sourceTree = "<group>"; };
+		8F51C4D11141FED54EE25442 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94912426318FC97DC8C56C09 /* Pods-holler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-holler/Pods-holler.debug.xcconfig"; sourceTree = "<group>"; };
+		B380DD848074F762573F2579 /* Pods_Holler_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holler_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3BB03B1C85865200123AB4 /* Pods_Holler_test.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Holler_test.framework; path = "Pods/../build/Debug-iphoneos/Pods_Holler_test.framework"; sourceTree = "<group>"; };
+		BC3BB03D1C8586F300123AB4 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		BC7A5AB31C73118200D33588 /* Holler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Holler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7A5AB81C73118200D33588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = holler_ios/Info.plist; sourceTree = "<group>"; };
+		BC7A5ACD1C7311D700D33588 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BC7A5ACE1C7311D700D33588 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC7A5AD61C7313D300D33588 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		BC7A5AD71C7313D300D33588 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		BC7A5ADB1C73140200D33588 /* HollerBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HollerBridgingHeader.h; path = holler_ios/HollerBridgingHeader.h; sourceTree = "<group>"; };
+		BC7A5ADC1C731BE300D33588 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		BC7A5ADD1C731BE300D33588 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BC7A5ADE1C731BE300D33588 /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		BC7A5ADF1C731BE300D33588 /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		BC7A5AE41C731C9200D33588 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC7A5B101C731EC800D33588 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BC7A5B111C731EC800D33588 /* SwiftyFontContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFontContents.swift; sourceTree = "<group>"; };
+		BC7A5B5B1C7320E200D33588 /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontBlaster.swift; sourceTree = "<group>"; };
+		BC7A5B5C1C7320E200D33588 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BC7A5B5D1C7320E200D33588 /* SwiftyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyArray.swift; sourceTree = "<group>"; };
+		BC7A5B5E1C7320E200D33588 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		BC7A5B821C73216600D33588 /* SwiftyDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyDevice.swift; path = holler_ios/Common/SwiftyDevice.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B831C73216600D33588 /* SwiftyNSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyNSBundle.swift; path = holler_ios/Common/SwiftyNSBundle.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B841C73216600D33588 /* SwiftyNSLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyNSLocale.swift; path = holler_ios/Common/SwiftyNSLocale.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B851C73216600D33588 /* SwiftyResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyResponseObjectSerializable.swift; path = holler_ios/Common/SwiftyResponseObjectSerializable.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B861C73216600D33588 /* SwiftyString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyString.swift; path = holler_ios/Common/SwiftyString.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B871C73216600D33588 /* SwiftyUILable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyUILable.swift; path = holler_ios/Common/SwiftyUILable.swift; sourceTree = SOURCE_ROOT; };
+		BC7A5B8E1C7323E800D33588 /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
+		BC7A5B911C73242800D33588 /* RMLLocationRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMLLocationRequestManager.swift; sourceTree = "<group>"; };
+		BC7B52CE1C75A86A00D1AAE1 /* Industry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Industry.swift; sourceTree = "<group>"; };
+		BC7B52D21C75C0CE00D1AAE1 /* holler_industry_tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = holler_industry_tests.swift; sourceTree = "<group>"; };
+		BC7B52D41C75C0EA00D1AAE1 /* holler_interest_tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = holler_interest_tests.swift; sourceTree = "<group>"; };
+		BC7B52D61C75C15700D1AAE1 /* holler_location_tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = holler_location_tests.swift; sourceTree = "<group>"; };
+		BC7B52DA1C76EAC400D1AAE1 /* Designation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
+		BC7B52DC1C76EC3100D1AAE1 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BC814CBA1C7412EB001662C9 /* Holler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holler.swift; sourceTree = "<group>"; };
+		BC937BA31C83FD0800B919D4 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		BC937BA51C841E7600B919D4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BC98C1E11C8544FB00D80B7C /* Pods_holler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_holler.framework; path = "Pods/../build/Debug-iphoneos/Pods_holler.framework"; sourceTree = "<group>"; };
+		BC98C1EB1C8545C200D80B7C /* Pods_holler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_holler.framework; path = "Pods/../build/Debug-iphoneos/Pods_holler.framework"; sourceTree = "<group>"; };
+		BCB31E141C7ABC8E0010E2D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BCCAFABA0A8B408DB25EAF19 /* Pods-Holler_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Holler_test/Pods-Holler_test.release.xcconfig"; sourceTree = "<group>"; };
+		BCFF88061C74263100F97C3F /* HollerServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HollerServiceManager.swift; sourceTree = "<group>"; };
+		BCFF880C1C742E1700F97C3F /* Holler Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Holler Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF88101C742E1700F97C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF881A1C7430C300F97C3F /* holler_pushNotification_tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = holler_pushNotification_tests.swift; sourceTree = "<group>"; };
+		BCFF881E1C7457B400F97C3F /* holler_subscriber_tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = holler_subscriber_tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC7A5AAF1C73118200D33588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB31E151C7ABC8E0010E2D0 /* Security.framework in Frameworks */,
+				BC7A5ACF1C7311D700D33588 /* CoreFoundation.framework in Frameworks */,
+				BC7A5AD01C7311D700D33588 /* Foundation.framework in Frameworks */,
+				60198A7734B7C6D13964B815 /* Pods_Holler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF88091C742E1700F97C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF88171C742E2100F97C3F /* Foundation.framework in Frameworks */,
+				BCFF88111C742E1700F97C3F /* Holler.framework in Frameworks */,
+				61FDD28EB8C4770B1B52F741 /* Pods_Holler_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC7A5AA91C73118200D33588 = {
+			isa = PBXGroup;
+			children = (
+				BC7A5AB51C73118200D33588 /* holler_ios */,
+				BCFF880D1C742E1700F97C3F /* holler_test */,
+				BC7A5AD11C7311E000D33588 /* Frameworks */,
+				BC7A5AD31C73124E00D33588 /* Support Files */,
+				BC7A5AB41C73118200D33588 /* Products */,
+				EFC535747DF58D22D65B5F4A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BC7A5AB41C73118200D33588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5AB31C73118200D33588 /* Holler.framework */,
+				BCFF880C1C742E1700F97C3F /* Holler Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC7A5AB51C73118200D33588 /* holler_ios */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF88051C74262000F97C3F /* Service */,
+				BC7A5AE61C731D6200D33588 /* Common */,
+				BC7A5AD41C7313D300D33588 /* Helper */,
+				BC7A5AD51C7313D300D33588 /* Logger */,
+				BC7A5AD81C7313D300D33588 /* Model */,
+				BC814CBA1C7412EB001662C9 /* Holler.swift */,
+				BC7A5AE41C731C9200D33588 /* Constants.swift */,
+			);
+			path = holler_ios;
+			sourceTree = "<group>";
+		};
+		BC7A5AD11C7311E000D33588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC3BB03B1C85865200123AB4 /* Pods_Holler_test.framework */,
+				BC98C1EB1C8545C200D80B7C /* Pods_holler.framework */,
+				BC98C1E11C8544FB00D80B7C /* Pods_holler.framework */,
+				BCB31E141C7ABC8E0010E2D0 /* Security.framework */,
+				BC7A5ACD1C7311D700D33588 /* CoreFoundation.framework */,
+				BC7A5ACE1C7311D700D33588 /* Foundation.framework */,
+				8F51C4D11141FED54EE25442 /* Pods.framework */,
+				6C9623A4841FF3238A2E3566 /* Pods_Holler.framework */,
+				B380DD848074F762573F2579 /* Pods_Holler_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC7A5AD31C73124E00D33588 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5AB81C73118200D33588 /* Info.plist */,
+				BC7A5ADB1C73140200D33588 /* HollerBridgingHeader.h */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		BC7A5AD41C7313D300D33588 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BC7A5AD51C7313D300D33588 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5AD61C7313D300D33588 /* Logger.h */,
+				BC7A5AD71C7313D300D33588 /* Logger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		BC7A5AD81C7313D300D33588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC937BA31C83FD0800B919D4 /* Error.swift */,
+				BC7A5B8E1C7323E800D33588 /* Subscriber.swift */,
+				BC7A5ADC1C731BE300D33588 /* Countries.swift */,
+				BC7A5ADD1C731BE300D33588 /* Country.swift */,
+				BC7A5ADE1C731BE300D33588 /* Gender.swift */,
+				BC7A5ADF1C731BE300D33588 /* Interest.swift */,
+				BC7B52CE1C75A86A00D1AAE1 /* Industry.swift */,
+				BC7B52DA1C76EAC400D1AAE1 /* Designation.swift */,
+				BC7B52DC1C76EC3100D1AAE1 /* Location.swift */,
+				BC937BA51C841E7600B919D4 /* Profile.swift */,
+				BC3BB03D1C8586F300123AB4 /* Target.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC7A5AE61C731D6200D33588 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5B901C73242800D33588 /* Manager */,
+				BC7A5B371C7320E200D33588 /* Categories */,
+				BC7A5B0F1C731EC800D33588 /* Utilities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC7A5B0F1C731EC800D33588 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5B101C731EC800D33588 /* README */,
+				BC7A5B111C731EC800D33588 /* SwiftyFontContents.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BC7A5B371C7320E200D33588 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5B821C73216600D33588 /* SwiftyDevice.swift */,
+				BC7A5B831C73216600D33588 /* SwiftyNSBundle.swift */,
+				BC7A5B841C73216600D33588 /* SwiftyNSLocale.swift */,
+				BC7A5B851C73216600D33588 /* SwiftyResponseObjectSerializable.swift */,
+				BC7A5B861C73216600D33588 /* SwiftyString.swift */,
+				BC7A5B871C73216600D33588 /* SwiftyUILable.swift */,
+				BC7A5B5B1C7320E200D33588 /* FontBlaster.swift */,
+				BC7A5B5C1C7320E200D33588 /* README */,
+				BC7A5B5D1C7320E200D33588 /* SwiftyArray.swift */,
+				BC7A5B5E1C7320E200D33588 /* SwiftyUserDefaults.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BC7A5B901C73242800D33588 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5B911C73242800D33588 /* RMLLocationRequestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BCFF88051C74262000F97C3F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF88061C74263100F97C3F /* HollerServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BCFF880D1C742E1700F97C3F /* holler_test */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF881E1C7457B400F97C3F /* holler_subscriber_tests.swift */,
+				BCFF881A1C7430C300F97C3F /* holler_pushNotification_tests.swift */,
+				BC7B52D21C75C0CE00D1AAE1 /* holler_industry_tests.swift */,
+				BC7B52D41C75C0EA00D1AAE1 /* holler_interest_tests.swift */,
+				BCFF88101C742E1700F97C3F /* Info.plist */,
+				BC7B52D61C75C15700D1AAE1 /* holler_location_tests.swift */,
+			);
+			path = holler_test;
+			sourceTree = "<group>";
+		};
+		EFC535747DF58D22D65B5F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94912426318FC97DC8C56C09 /* Pods-holler.debug.xcconfig */,
+				49C46FF1C182276B100877C5 /* Pods-holler.release.xcconfig */,
+				7ECAA05550DFEAD6A0A8F815 /* Pods-Holler_test.debug.xcconfig */,
+				BCCAFABA0A8B408DB25EAF19 /* Pods-Holler_test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BC7A5AB01C73118200D33588 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF88201C74595000F97C3F /* Holler.swift in Headers */,
+				BC937BA21C83D96000B919D4 /* Subscriber.swift in Headers */,
+				BC98C1E31C85453900D80B7C /* Countries.swift in Headers */,
+				BC98C1E51C85454100D80B7C /* Interest.swift in Headers */,
+				BC98C1E61C85454400D80B7C /* Industry.swift in Headers */,
+				BC98C1E71C85454800D80B7C /* Designation.swift in Headers */,
+				BC98C1E81C85454A00D80B7C /* Location.swift in Headers */,
+				BC98C1E41C85453D00D80B7C /* Gender.swift in Headers */,
+				BC98C1E91C85454D00D80B7C /* Profile.swift in Headers */,
+				BCFF88211C7459E200F97C3F /* HollerServiceManager.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BC7A5AB21C73118200D33588 /* Holler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7A5AC71C73118200D33588 /* Build configuration list for PBXNativeTarget "Holler" */;
+			buildPhases = (
+				A2DECB01F3DB43113D81E5BF /* Check Pods Manifest.lock */,
+				BC7A5AAE1C73118200D33588 /* Sources */,
+				BC7A5AAF1C73118200D33588 /* Frameworks */,
+				BC7A5AB01C73118200D33588 /* Headers */,
+				BC7A5AB11C73118200D33588 /* Resources */,
+				A9810F658342F1D35906FCF3 /* Copy Pods Resources */,
+				BCFF88221C745A2000F97C3F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Holler;
+			productName = holler_ios;
+			productReference = BC7A5AB31C73118200D33588 /* Holler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCFF880B1C742E1700F97C3F /* Holler_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF88141C742E1700F97C3F /* Build configuration list for PBXNativeTarget "Holler_test" */;
+			buildPhases = (
+				E5A68E791E7CCAB2FAE8C7A0 /* Check Pods Manifest.lock */,
+				BCFF88081C742E1700F97C3F /* Sources */,
+				BCFF88091C742E1700F97C3F /* Frameworks */,
+				BCFF880A1C742E1700F97C3F /* Resources */,
+				C681695E333E21977457B856 /* Embed Pods Frameworks */,
+				0B569E4B93CCAC9A922B20CD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFF88131C742E1700F97C3F /* PBXTargetDependency */,
+			);
+			name = Holler_test;
+			productName = holler_test;
+			productReference = BCFF880C1C742E1700F97C3F /* Holler Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC7A5AAA1C73118200D33588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = RML;
+				TargetAttributes = {
+					BC7A5AB21C73118200D33588 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = E888DAGUR4;
+					};
+					BCFF880B1C742E1700F97C3F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = BC7A5AAD1C73118200D33588 /* Build configuration list for PBXProject "holler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC7A5AA91C73118200D33588;
+			productRefGroup = BC7A5AB41C73118200D33588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC7A5AB21C73118200D33588 /* Holler */,
+				BCFF880B1C742E1700F97C3F /* Holler_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC7A5AB11C73118200D33588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A5B791C7320E200D33588 /* README in Resources */,
+				BC7A5B2F1C731EC800D33588 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF880A1C742E1700F97C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B569E4B93CCAC9A922B20CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Holler_test/Pods-Holler_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2DECB01F3DB43113D81E5BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9810F658342F1D35906FCF3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Holler/Pods-Holler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCFF88221C745A2000F97C3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		C681695E333E21977457B856 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Holler_test/Pods-Holler_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A68E791E7CCAB2FAE8C7A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC7A5AAE1C73118200D33588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A5B8C1C73216600D33588 /* SwiftyString.swift in Sources */,
+				BC7A5B7A1C7320E200D33588 /* SwiftyArray.swift in Sources */,
+				BC7A5B921C73242800D33588 /* RMLLocationRequestManager.swift in Sources */,
+				BC937BA61C841E7600B919D4 /* Profile.swift in Sources */,
+				BC7A5B8D1C73216600D33588 /* SwiftyUILable.swift in Sources */,
+				BC7A5AE31C731BE300D33588 /* Interest.swift in Sources */,
+				BC3BB03E1C8586F300123AB4 /* Target.swift in Sources */,
+				BC7A5B301C731EC800D33588 /* SwiftyFontContents.swift in Sources */,
+				BC7A5B881C73216600D33588 /* SwiftyDevice.swift in Sources */,
+				BC7A5B891C73216600D33588 /* SwiftyNSBundle.swift in Sources */,
+				BCFF88071C74263100F97C3F /* HollerServiceManager.swift in Sources */,
+				BC7A5B7B1C7320E200D33588 /* SwiftyUserDefaults.swift in Sources */,
+				BC7A5AE01C731BE300D33588 /* Countries.swift in Sources */,
+				BC7A5ADA1C7313D300D33588 /* Logger.m in Sources */,
+				BC7A5AE21C731BE300D33588 /* Gender.swift in Sources */,
+				BC7A5B8F1C7323E800D33588 /* Subscriber.swift in Sources */,
+				BC937BA41C83FD0800B919D4 /* Error.swift in Sources */,
+				BC814CBB1C7412EB001662C9 /* Holler.swift in Sources */,
+				BC7A5AE11C731BE300D33588 /* Country.swift in Sources */,
+				BC7A5B8B1C73216600D33588 /* SwiftyResponseObjectSerializable.swift in Sources */,
+				BC7A5B781C7320E200D33588 /* FontBlaster.swift in Sources */,
+				BC7B52CF1C75A86A00D1AAE1 /* Industry.swift in Sources */,
+				BC7A5AE51C731C9200D33588 /* Constants.swift in Sources */,
+				BC7A5B8A1C73216600D33588 /* SwiftyNSLocale.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF88081C742E1700F97C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B52DB1C76EAC500D1AAE1 /* Designation.swift in Sources */,
+				BC7B52DD1C76EC3100D1AAE1 /* Location.swift in Sources */,
+				BC7B52D71C75C15700D1AAE1 /* holler_location_tests.swift in Sources */,
+				BCFF881B1C7430C300F97C3F /* holler_pushNotification_tests.swift in Sources */,
+				BCFF881F1C7457B400F97C3F /* holler_subscriber_tests.swift in Sources */,
+				BC7B52D31C75C0CE00D1AAE1 /* holler_industry_tests.swift in Sources */,
+				BC7B52D51C75C0EA00D1AAE1 /* holler_interest_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCFF88131C742E1700F97C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC7A5AB21C73118200D33588 /* Holler */;
+			targetProxy = BCFF88121C742E1700F97C3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC7A5AC51C73118200D33588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC7A5AC61C73118200D33588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC7A5AC81C73118200D33588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94912426318FC97DC8C56C09 /* Pods-holler.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Phong Nguyen (6NHQV6LQ87)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = holler_ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.holler-ios";
+				PRODUCT_NAME = Holler;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		BC7A5AC91C73118200D33588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C46FF1C182276B100877C5 /* Pods-holler.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Phong Nguyen (6NHQV6LQ87)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = holler_ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.holler-ios";
+				PRODUCT_NAME = Holler;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		BCFF88151C742E1700F97C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECAA05550DFEAD6A0A8F815 /* Pods-Holler_test.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = holler_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.holler-test";
+				PRODUCT_NAME = "Holler Tests";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		BCFF88161C742E1700F97C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCAFABA0A8B408DB25EAF19 /* Pods-Holler_test.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = holler_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.holler-test";
+				PRODUCT_NAME = "Holler Tests";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC7A5AAD1C73118200D33588 /* Build configuration list for PBXProject "holler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7A5AC51C73118200D33588 /* Debug */,
+				BC7A5AC61C73118200D33588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7A5AC71C73118200D33588 /* Build configuration list for PBXNativeTarget "Holler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7A5AC81C73118200D33588 /* Debug */,
+				BC7A5AC91C73118200D33588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF88141C742E1700F97C3F /* Build configuration list for PBXNativeTarget "Holler_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF88151C742E1700F97C3F /* Debug */,
+				BCFF88161C742E1700F97C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC7A5AAA1C73118200D33588 /* Project object */;
+}
