@@ -1,0 +1,6 @@
+framework module Holler {
+  umbrella header "Holler.h"
+
+  export *
+  module * { export * }
+}

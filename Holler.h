@@ -1,5 +1,5 @@
 //
-//  Holler_iOS_SDK.h
+//  Holler.h
 //  Holler_iOS_SDK
 //
 //  Created by Phong Nguyen on 4/14/16.
@@ -16,4 +16,10 @@ FOUNDATION_EXPORT const unsigned char Holler_iOS_SDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Holler_iOS_SDK/PublicHeader.h>
 
-
+#import <Holler/Holler.h>
+#import <Holler/HLUtility.h>
+#import <Holler/HLError.h>
+#import <Holler/HLTracking.h>
+#import <Holler/HLApplication.h>
+#import <Holler/HLTarget.h>
+#import <Holler/HLSubscriber.h>

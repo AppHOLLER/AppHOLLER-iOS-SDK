@@ -1,0 +1,58 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/rml/Library/Developer/Xcode/DerivedData/Holler-dctayjvqitcstbaqqpkvqikbkpwc/Build/Products/Debug-iphoneos/Holler.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "HLApplication.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/Application/HLApplication.h"
+        },
+        {
+          'type': 'file',
+          'name': "HLError.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/HLError.h"
+        },
+        {
+          'type': 'file',
+          'name': "HLSubscriber.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/Subscribers/HLSubscriber.h"
+        },
+        {
+          'type': 'file',
+          'name': "HLTarget.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/Target/HLTarget.h"
+        },
+        {
+          'type': 'file',
+          'name': "HLTracking.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/Tracking/HLTracking.h"
+        },
+        {
+          'type': 'file',
+          'name': "Holler-Swift.h",
+          'external-contents': "/Users/rml/Library/Developer/Xcode/DerivedData/Holler-dctayjvqitcstbaqqpkvqikbkpwc/Build/Products/Debug-iphoneos/Holler.framework/Headers/Holler-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Holler.h",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/Holler/Holler.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rml/Library/Developer/Xcode/DerivedData/Holler-dctayjvqitcstbaqqpkvqikbkpwc/Build/Products/Debug-iphoneos/Holler.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rml/Workplace/Workspace/Holler_iOS_SDK/build/Holler.build/Debug-iphoneos/Holler.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

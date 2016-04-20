@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64F5D893A05132D57686A519 /* libPods-Holler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE0C1CDF03338E6EBC7A9B /* libPods-Holler.a */; };
+		AEF56052444B5B7767E7DA05 /* libPods-HollerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D65FD3918534F1AA001546C0 /* libPods-HollerTests.a */; };
+		BC4E016D1CC4DA8800BBE075 /* HLTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4E016B1CC4DA8800BBE075 /* HLTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4E016E1CC4DA8800BBE075 /* HLTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4E016C1CC4DA8800BBE075 /* HLTracking.m */; };
+		BC9164411CC6034900EA0E77 /* Holler_Test_Target.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9164401CC6034900EA0E77 /* Holler_Test_Target.m */; };
+		BC9164431CC6036100EA0E77 /* Holler_Test_Application.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9164421CC6036100EA0E77 /* Holler_Test_Application.m */; };
+		BC9164461CC645BB00EA0E77 /* HLError.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9164441CC645BB00EA0E77 /* HLError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC9164471CC645BB00EA0E77 /* HLError.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9164451CC645BB00EA0E77 /* HLError.m */; };
+		BC91647B1CC7389000EA0E77 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC91647A1CC7389000EA0E77 /* libAFNetworking.a */; };
+		BC968C5D1CBF35F4008D15AC /* Holler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC968C521CBF35F4008D15AC /* Holler.framework */; };
+		BC968C621CBF35F4008D15AC /* Holler_Test_Subscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968C611CBF35F4008D15AC /* Holler_Test_Subscriber.m */; };
+		BC968CE81CBF8A88008D15AC /* HLApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CD31CBF8A88008D15AC /* HLApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC968CE91CBF8A88008D15AC /* HLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CD41CBF8A88008D15AC /* HLApplication.m */; };
+		BC968CEA1CBF8A88008D15AC /* Holler.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CD51CBF8A88008D15AC /* Holler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC968CEB1CBF8A88008D15AC /* Holler.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CD61CBF8A88008D15AC /* Holler.m */; };
+		BC968CEC1CBF8A88008D15AC /* HLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CD81CBF8A88008D15AC /* HLConstants.h */; };
+		BC968CED1CBF8A88008D15AC /* HLMiscellaneous.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CD91CBF8A88008D15AC /* HLMiscellaneous.h */; };
+		BC968CEE1CBF8A88008D15AC /* HLMiscellaneous.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CDA1CBF8A88008D15AC /* HLMiscellaneous.m */; };
+		BC968CEF1CBF8A88008D15AC /* HLServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CDC1CBF8A88008D15AC /* HLServiceManager.h */; };
+		BC968CF01CBF8A88008D15AC /* HLServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CDD1CBF8A88008D15AC /* HLServiceManager.m */; };
+		BC968CF11CBF8A88008D15AC /* HLTask.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CDE1CBF8A88008D15AC /* HLTask.h */; };
+		BC968CF21CBF8A88008D15AC /* HLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CDF1CBF8A88008D15AC /* HLTask.m */; };
+		BC968CF31CBF8A88008D15AC /* HLTaskExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CE01CBF8A88008D15AC /* HLTaskExecutor.h */; };
+		BC968CF41CBF8A88008D15AC /* HLTaskExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CE11CBF8A88008D15AC /* HLTaskExecutor.m */; };
+		BC968CF51CBF8A88008D15AC /* HLSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CE31CBF8A88008D15AC /* HLSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC968CF61CBF8A88008D15AC /* HLSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CE41CBF8A88008D15AC /* HLSubscriber.m */; };
+		BC968CF71CBF8A88008D15AC /* HLTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CE61CBF8A88008D15AC /* HLTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC968CF81CBF8A88008D15AC /* HLTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CE71CBF8A88008D15AC /* HLTarget.m */; };
+		BC968CFA1CBFA1C6008D15AC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC968CF91CBFA1C6008D15AC /* CoreLocation.framework */; };
+		BC968CFD1CC09007008D15AC /* HLUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = BC968CFB1CC09007008D15AC /* HLUtility.h */; };
+		BC968CFE1CC09007008D15AC /* HLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC968CFC1CC09007008D15AC /* HLUtility.m */; };
+		F160F0F2C4CDE1FD9CA500AA /* libPods-Holler_iOS_SDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394BCC987838A02B72C10853 /* libPods-Holler_iOS_SDKTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC968C5E1CBF35F4008D15AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC968C491CBF35F4008D15AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC968C511CBF35F4008D15AC;
+			remoteInfo = Holler_iOS_SDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		394BCC987838A02B72C10853 /* libPods-Holler_iOS_SDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Holler_iOS_SDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562B49A730CB3A0063EFF10D /* libPods-Holler_iOS_SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Holler_iOS_SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E19A82BEACED453EE68464 /* Pods-Holler_iOS_SDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler_iOS_SDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Holler_iOS_SDKTests/Pods-Holler_iOS_SDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6657A0A60B62EAF857DBC06 /* Pods-Holler_iOS_SDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler_iOS_SDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Holler_iOS_SDKTests/Pods-Holler_iOS_SDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC4E016B1CC4DA8800BBE075 /* HLTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTracking.h; sourceTree = "<group>"; };
+		BC4E016C1CC4DA8800BBE075 /* HLTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTracking.m; sourceTree = "<group>"; };
+		BC9164401CC6034900EA0E77 /* Holler_Test_Target.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Holler_Test_Target.m; sourceTree = "<group>"; };
+		BC9164421CC6036100EA0E77 /* Holler_Test_Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Holler_Test_Application.m; sourceTree = "<group>"; };
+		BC9164441CC645BB00EA0E77 /* HLError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLError.h; sourceTree = "<group>"; };
+		BC9164451CC645BB00EA0E77 /* HLError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLError.m; sourceTree = "<group>"; };
+		BC9164491CC7214900EA0E77 /* Holler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Holler.h; sourceTree = "<group>"; };
+		BC91647A1CC7389000EA0E77 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		BC968C521CBF35F4008D15AC /* Holler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Holler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC968C5C1CBF35F4008D15AC /* HollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC968C611CBF35F4008D15AC /* Holler_Test_Subscriber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Holler_Test_Subscriber.m; sourceTree = "<group>"; };
+		BC968C631CBF35F4008D15AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC968CD31CBF8A88008D15AC /* HLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLApplication.h; sourceTree = "<group>"; };
+		BC968CD41CBF8A88008D15AC /* HLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLApplication.m; sourceTree = "<group>"; };
+		BC968CD51CBF8A88008D15AC /* Holler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Holler.h; sourceTree = "<group>"; };
+		BC968CD61CBF8A88008D15AC /* Holler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Holler.m; sourceTree = "<group>"; };
+		BC968CD81CBF8A88008D15AC /* HLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLConstants.h; sourceTree = "<group>"; };
+		BC968CD91CBF8A88008D15AC /* HLMiscellaneous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMiscellaneous.h; sourceTree = "<group>"; };
+		BC968CDA1CBF8A88008D15AC /* HLMiscellaneous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMiscellaneous.m; sourceTree = "<group>"; };
+		BC968CDC1CBF8A88008D15AC /* HLServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLServiceManager.h; sourceTree = "<group>"; };
+		BC968CDD1CBF8A88008D15AC /* HLServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLServiceManager.m; sourceTree = "<group>"; };
+		BC968CDE1CBF8A88008D15AC /* HLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTask.h; sourceTree = "<group>"; };
+		BC968CDF1CBF8A88008D15AC /* HLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTask.m; sourceTree = "<group>"; };
+		BC968CE01CBF8A88008D15AC /* HLTaskExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTaskExecutor.h; sourceTree = "<group>"; };
+		BC968CE11CBF8A88008D15AC /* HLTaskExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTaskExecutor.m; sourceTree = "<group>"; };
+		BC968CE31CBF8A88008D15AC /* HLSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSubscriber.h; sourceTree = "<group>"; };
+		BC968CE41CBF8A88008D15AC /* HLSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSubscriber.m; sourceTree = "<group>"; };
+		BC968CE61CBF8A88008D15AC /* HLTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTarget.h; sourceTree = "<group>"; };
+		BC968CE71CBF8A88008D15AC /* HLTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTarget.m; sourceTree = "<group>"; };
+		BC968CF91CBFA1C6008D15AC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BC968CFB1CC09007008D15AC /* HLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUtility.h; sourceTree = "<group>"; };
+		BC968CFC1CC09007008D15AC /* HLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLUtility.m; sourceTree = "<group>"; };
+		D0FE0C1CDF03338E6EBC7A9B /* libPods-Holler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Holler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65FD3918534F1AA001546C0 /* libPods-HollerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HollerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0552E81758A644B8622BB0 /* Pods-Holler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Holler/Pods-Holler.release.xcconfig"; sourceTree = "<group>"; };
+		F6D336124C77C4FE1F34E7C8 /* Pods-Holler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Holler/Pods-Holler.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC968C4E1CBF35F4008D15AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC91647B1CC7389000EA0E77 /* libAFNetworking.a in Frameworks */,
+				BC968CFA1CBFA1C6008D15AC /* CoreLocation.framework in Frameworks */,
+				64F5D893A05132D57686A519 /* libPods-Holler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC968C591CBF35F4008D15AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC968C5D1CBF35F4008D15AC /* Holler.framework in Frameworks */,
+				F160F0F2C4CDE1FD9CA500AA /* libPods-Holler_iOS_SDKTests.a in Frameworks */,
+				AEF56052444B5B7767E7DA05 /* libPods-HollerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6332B1448884F36ADA873D82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC91647A1CC7389000EA0E77 /* libAFNetworking.a */,
+				BC968CF91CBFA1C6008D15AC /* CoreLocation.framework */,
+				562B49A730CB3A0063EFF10D /* libPods-Holler_iOS_SDK.a */,
+				394BCC987838A02B72C10853 /* libPods-Holler_iOS_SDKTests.a */,
+				D0FE0C1CDF03338E6EBC7A9B /* libPods-Holler.a */,
+				D65FD3918534F1AA001546C0 /* libPods-HollerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC4E016A1CC4DA7400BBE075 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				BC4E016B1CC4DA8800BBE075 /* HLTracking.h */,
+				BC4E016C1CC4DA8800BBE075 /* HLTracking.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		BC968C481CBF35F4008D15AC = {
+			isa = PBXGroup;
+			children = (
+				BC9164491CC7214900EA0E77 /* Holler.h */,
+				BC968CD11CBF8A88008D15AC /* Holler */,
+				BC968C601CBF35F4008D15AC /* Holler_iOS_SDKTests */,
+				BC968C531CBF35F4008D15AC /* Products */,
+				C9C9904B3A6EBB61FE6EA342 /* Pods */,
+				6332B1448884F36ADA873D82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC968C531CBF35F4008D15AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC968C521CBF35F4008D15AC /* Holler.framework */,
+				BC968C5C1CBF35F4008D15AC /* HollerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC968C601CBF35F4008D15AC /* Holler_iOS_SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC968C611CBF35F4008D15AC /* Holler_Test_Subscriber.m */,
+				BC9164401CC6034900EA0E77 /* Holler_Test_Target.m */,
+				BC9164421CC6036100EA0E77 /* Holler_Test_Application.m */,
+				BC968C631CBF35F4008D15AC /* Info.plist */,
+			);
+			path = Holler_iOS_SDKTests;
+			sourceTree = "<group>";
+		};
+		BC968CD11CBF8A88008D15AC /* Holler */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CD51CBF8A88008D15AC /* Holler.h */,
+				BC968CD61CBF8A88008D15AC /* Holler.m */,
+				BC9164441CC645BB00EA0E77 /* HLError.h */,
+				BC9164451CC645BB00EA0E77 /* HLError.m */,
+				BC4E016A1CC4DA7400BBE075 /* Tracking */,
+				BC968CD21CBF8A88008D15AC /* Application */,
+				BC968CD71CBF8A88008D15AC /* Miscellaneous */,
+				BC968CDB1CBF8A88008D15AC /* Service */,
+				BC968CE21CBF8A88008D15AC /* Subscribers */,
+				BC968CE51CBF8A88008D15AC /* Target */,
+			);
+			path = Holler;
+			sourceTree = "<group>";
+		};
+		BC968CD21CBF8A88008D15AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CD31CBF8A88008D15AC /* HLApplication.h */,
+				BC968CD41CBF8A88008D15AC /* HLApplication.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC968CD71CBF8A88008D15AC /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CD81CBF8A88008D15AC /* HLConstants.h */,
+				BC968CD91CBF8A88008D15AC /* HLMiscellaneous.h */,
+				BC968CDA1CBF8A88008D15AC /* HLMiscellaneous.m */,
+				BC968CFB1CC09007008D15AC /* HLUtility.h */,
+				BC968CFC1CC09007008D15AC /* HLUtility.m */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		BC968CDB1CBF8A88008D15AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CDC1CBF8A88008D15AC /* HLServiceManager.h */,
+				BC968CDD1CBF8A88008D15AC /* HLServiceManager.m */,
+				BC968CDE1CBF8A88008D15AC /* HLTask.h */,
+				BC968CDF1CBF8A88008D15AC /* HLTask.m */,
+				BC968CE01CBF8A88008D15AC /* HLTaskExecutor.h */,
+				BC968CE11CBF8A88008D15AC /* HLTaskExecutor.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BC968CE21CBF8A88008D15AC /* Subscribers */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CE31CBF8A88008D15AC /* HLSubscriber.h */,
+				BC968CE41CBF8A88008D15AC /* HLSubscriber.m */,
+			);
+			path = Subscribers;
+			sourceTree = "<group>";
+		};
+		BC968CE51CBF8A88008D15AC /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				BC968CE61CBF8A88008D15AC /* HLTarget.h */,
+				BC968CE71CBF8A88008D15AC /* HLTarget.m */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		C9C9904B3A6EBB61FE6EA342 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6D336124C77C4FE1F34E7C8 /* Pods-Holler.debug.xcconfig */,
+				EC0552E81758A644B8622BB0 /* Pods-Holler.release.xcconfig */,
+				B6657A0A60B62EAF857DBC06 /* Pods-Holler_iOS_SDKTests.debug.xcconfig */,
+				89E19A82BEACED453EE68464 /* Pods-Holler_iOS_SDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BC968C4F1CBF35F4008D15AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC968CEA1CBF8A88008D15AC /* Holler.h in Headers */,
+				BC4E016D1CC4DA8800BBE075 /* HLTracking.h in Headers */,
+				BC9164461CC645BB00EA0E77 /* HLError.h in Headers */,
+				BC968CF71CBF8A88008D15AC /* HLTarget.h in Headers */,
+				BC968CF51CBF8A88008D15AC /* HLSubscriber.h in Headers */,
+				BC968CF31CBF8A88008D15AC /* HLTaskExecutor.h in Headers */,
+				BC968CEF1CBF8A88008D15AC /* HLServiceManager.h in Headers */,
+				BC968CFD1CC09007008D15AC /* HLUtility.h in Headers */,
+				BC968CED1CBF8A88008D15AC /* HLMiscellaneous.h in Headers */,
+				BC968CEC1CBF8A88008D15AC /* HLConstants.h in Headers */,
+				BC968CF11CBF8A88008D15AC /* HLTask.h in Headers */,
+				BC968CE81CBF8A88008D15AC /* HLApplication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BC968C511CBF35F4008D15AC /* Holler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC968C661CBF35F4008D15AC /* Build configuration list for PBXNativeTarget "Holler" */;
+			buildPhases = (
+				8A752632B72842961950B7FB /* Check Pods Manifest.lock */,
+				BC968C4D1CBF35F4008D15AC /* Sources */,
+				BC968C4E1CBF35F4008D15AC /* Frameworks */,
+				BC968C4F1CBF35F4008D15AC /* Headers */,
+				BC968C501CBF35F4008D15AC /* Resources */,
+				D6827A64126DF83F38B8DB01 /* Copy Pods Resources */,
+				BC9164841CC756DE00EA0E77 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Holler;
+			productName = Holler_iOS_SDK;
+			productReference = BC968C521CBF35F4008D15AC /* Holler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC968C5B1CBF35F4008D15AC /* HollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC968C691CBF35F4008D15AC /* Build configuration list for PBXNativeTarget "HollerTests" */;
+			buildPhases = (
+				BFA26E5EA3BAE7BAF65EE884 /* Check Pods Manifest.lock */,
+				BC968C581CBF35F4008D15AC /* Sources */,
+				BC968C591CBF35F4008D15AC /* Frameworks */,
+				BC968C5A1CBF35F4008D15AC /* Resources */,
+				F0FEB9B172D6BC822E701498 /* Embed Pods Frameworks */,
+				E40057D2C4B2821CA41A5B69 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC968C5F1CBF35F4008D15AC /* PBXTargetDependency */,
+			);
+			name = HollerTests;
+			productName = Holler_iOS_SDKTests;
+			productReference = BC968C5C1CBF35F4008D15AC /* HollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC968C491CBF35F4008D15AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = RML;
+				TargetAttributes = {
+					BC968C511CBF35F4008D15AC = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E888DAGUR4;
+					};
+					BC968C5B1CBF35F4008D15AC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BC968C4C1CBF35F4008D15AC /* Build configuration list for PBXProject "Holler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC968C481CBF35F4008D15AC;
+			productRefGroup = BC968C531CBF35F4008D15AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC968C511CBF35F4008D15AC /* Holler */,
+				BC968C5B1CBF35F4008D15AC /* HollerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC968C501CBF35F4008D15AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC968C5A1CBF35F4008D15AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A752632B72842961950B7FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9164841CC756DE00EA0E77 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"";
+		};
+		BFA26E5EA3BAE7BAF65EE884 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6827A64126DF83F38B8DB01 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Holler/Pods-Holler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E40057D2C4B2821CA41A5B69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollerTests/Pods-HollerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FEB9B172D6BC822E701498 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollerTests/Pods-HollerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC968C4D1CBF35F4008D15AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC968CE91CBF8A88008D15AC /* HLApplication.m in Sources */,
+				BC968CF61CBF8A88008D15AC /* HLSubscriber.m in Sources */,
+				BC968CEB1CBF8A88008D15AC /* Holler.m in Sources */,
+				BC968CEE1CBF8A88008D15AC /* HLMiscellaneous.m in Sources */,
+				BC968CFE1CC09007008D15AC /* HLUtility.m in Sources */,
+				BC968CF81CBF8A88008D15AC /* HLTarget.m in Sources */,
+				BC4E016E1CC4DA8800BBE075 /* HLTracking.m in Sources */,
+				BC968CF01CBF8A88008D15AC /* HLServiceManager.m in Sources */,
+				BC9164471CC645BB00EA0E77 /* HLError.m in Sources */,
+				BC968CF41CBF8A88008D15AC /* HLTaskExecutor.m in Sources */,
+				BC968CF21CBF8A88008D15AC /* HLTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC968C581CBF35F4008D15AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9164431CC6036100EA0E77 /* Holler_Test_Application.m in Sources */,
+				BC9164411CC6034900EA0E77 /* Holler_Test_Target.m in Sources */,
+				BC968C621CBF35F4008D15AC /* Holler_Test_Subscriber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC968C5F1CBF35F4008D15AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC968C511CBF35F4008D15AC /* Holler */;
+			targetProxy = BC968C5E1CBF35F4008D15AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC968C641CBF35F4008D15AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC968C651CBF35F4008D15AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC968C671CBF35F4008D15AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D336124C77C4FE1F34E7C8 /* Pods-Holler.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Holler_iOS_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				"MODULEMAP_FILE[sdk=*]" = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.Holler-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		BC968C681CBF35F4008D15AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0552E81758A644B8622BB0 /* Pods-Holler.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Holler_iOS_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				"MODULEMAP_FILE[sdk=*]" = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml.Holler-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		BC968C6A1CBF35F4008D15AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6657A0A60B62EAF857DBC06 /* Pods-Holler_iOS_SDKTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Holler_iOS_SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml..Holler-iOS-SDKTests";
+				PRODUCT_NAME = HollerTests;
+			};
+			name = Debug;
+		};
+		BC968C6B1CBF35F4008D15AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E19A82BEACED453EE68464 /* Pods-Holler_iOS_SDKTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Holler_iOS_SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rml..Holler-iOS-SDKTests";
+				PRODUCT_NAME = HollerTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC968C4C1CBF35F4008D15AC /* Build configuration list for PBXProject "Holler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC968C641CBF35F4008D15AC /* Debug */,
+				BC968C651CBF35F4008D15AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC968C661CBF35F4008D15AC /* Build configuration list for PBXNativeTarget "Holler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC968C671CBF35F4008D15AC /* Debug */,
+				BC968C681CBF35F4008D15AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC968C691CBF35F4008D15AC /* Build configuration list for PBXNativeTarget "HollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC968C6A1CBF35F4008D15AC /* Debug */,
+				BC968C6B1CBF35F4008D15AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC968C491CBF35F4008D15AC /* Project object */;
+}
