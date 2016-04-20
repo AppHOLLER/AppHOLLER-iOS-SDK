@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const deviceOS;
+extern NSString *const trackedRemark;
+
 @interface HLTracking : NSObject
+
+//Usage tracking
++(void)openedUsageTrackingFromNow;
++(void)closedUsageTrackingFromNow;
+
 
 @end

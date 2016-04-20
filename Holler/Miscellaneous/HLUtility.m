@@ -10,4 +10,14 @@
 
 @implementation HLUtility
 
++(NSDate *)conformDateToFormat:(NSString *)date format:(NSString *)format{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:format];
+    return [dateFormatter dateFromString:date];
+}
+
++(NSDate *)conformDateToHOLLERFormat:(NSString *)date{
+    return [HLUtility conformDateToFormat:date format:@"YYYY-mm-DDTGG:ii:ss.ZZZZZZ"];
+}
+
 @end

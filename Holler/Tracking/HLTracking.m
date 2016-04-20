@@ -8,6 +8,18 @@
 
 #import "HLTracking.h"
 
+#import <Holler/HLUtility.h>
+#import <Holler/HLConstants.h>
+#import <Holler/HLServiceManager.h>
+
 @implementation HLTracking
+
++(void)openedUsageTrackingFromNow{
+    
+}
+
++(void)closedUsageTrackingFromNow{
+    
+}
 
 @end

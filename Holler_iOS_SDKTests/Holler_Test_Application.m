@@ -8,6 +8,9 @@
 
 #import <XCTest/XCTest.h>
 
+#import "Holler.h"
+#import "HLApplication.h"
+
 @interface Holler_Test_Application : XCTestCase
 
 @end
@@ -24,9 +27,22 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)test_getApplicationById {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Testing get application by Id"];
+    
+    [HLApplication fetchApplicationById:@"68dcc83f75d8fd0482b7c73953b85008a7f8a111" onCompletion:^(BOOL succeed, NSError *error, HLError *errorObject, HLApplication *application){
+        NSAssert(!error, @"Error should not be returned");
+        NSAssert(application, @"Application should be got");
+        NSAssert(!errorObject, @"Error object should not be returned");
+        
+        [expectation fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:100 handler:^(NSError *error){
+        if (error != nil) {
+            NSLog(@"Error: %@", error.localizedDescription);
+        }
+    }];
 }
 
 - (void)testPerformanceExample {

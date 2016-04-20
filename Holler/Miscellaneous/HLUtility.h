@@ -10,4 +10,7 @@
 
 @interface HLUtility : NSObject
 
++(NSDate *)conformDateToFormat: (NSString *)date format: (NSString *)format;
++(NSDate *)conformDateToHOLLERFormat: (NSString *)date;
+
 @end

@@ -8,18 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum Error: NSUInteger {
-    HL_SERVER_ERROR = 500,
-    HL_REQUEST_SUCCEED = 200,
-    HL_REQUEST_FAILED,
-    HL_REQUEST_FORBIDDEN,
-    HL_REQUEST_ERROR_UNDEFINED
-} HollerError;
+extern NSString *HollerServiceURL;
 
+@class HLSubscriber;
 
-extern NSString *const HollerServiceURLDebug;
+@interface HLMiscellaneous : NSObject
 
-extern NSString *const HollerServiceURLStaging;
++(NSString *)perceiveAPI:(NSString *)request;
++(NSDictionary *)perceiveHeaderCredential;
++(BOOL)perceiveDeviceToken: (NSData *)deviceToken;
 
-extern NSString *const HollerServiceURLLived;
+//Subscriber Manipulation
++(NSDictionary *)deserialiseSubscriber: (HLSubscriber*)subscriber;
++(NSData *)deserialiseSubscriberToData: (HLSubscriber*)subscriber error: (NSError**)error;
 
+//Device token Manipulation
++(NSString *)deviceTokenForData: (NSData *)data;
+
+//Push Notification Manipulation
++(NSString *)detachCommunicationIdFromPayload: (NSDictionary *)payload;
++(NSDictionary *)serialisePushNotificationReceivedFromPayload: (NSDictionary *)payload;
+@end
