@@ -1,2 +1,2 @@
 # AppHOLLER
-SaaS with Insight Analytics, Marketing Automation and capable of User Engagement
+SaaS with Insight Analytics, Marketing Automation and capability of User Engagement
